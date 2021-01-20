@@ -15,10 +15,6 @@
       "type": "string",
       "required": true
     },
-    "videos": {
-      "collection": "video",
-      "via": "categories"
-    },
     "children": {
       "collection": "category",
       "via": "parent"
@@ -26,6 +22,10 @@
     "parent": {
       "model": "category",
       "via": "children"
+    },
+    "videos": {
+      "via": "category",
+      "collection": "video"
     }
   }
 }

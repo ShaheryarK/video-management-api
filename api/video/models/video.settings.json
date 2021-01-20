@@ -18,10 +18,9 @@
       "collection": "tag",
       "via": "videos"
     },
-    "categories": {
-      "via": "videos",
-      "collection": "category",
-      "dominant": true
+    "category": {
+      "model": "category",
+      "via": "videos"
     },
     "video": {
       "model": "file",
